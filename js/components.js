@@ -2,13 +2,13 @@
    components.js – Nav + Footer + WhatsApp injetados em todas as páginas
    ============================================================ */
 
-const WA_NUMBER  = '5531999999999'; // ← SUBSTITUA pelo número real com DDD e DDI
+const WA_NUMBER  = '5531980024180'; // ← SUBSTITUA pelo número real com DDD e DDI
 const WA_MESSAGE = encodeURIComponent('Olá! Gostaria de uma consulta com Da Fonseca Advogados.');
 
 const NAV_HTML = `
 <nav id="nav">
   <a href="index.html" class="nav-logo">
-    Da Fonseca
+    DA FONSECA
     <span>Sociedade de Advogados</span>
   </a>
   <div class="nav-menu">
@@ -42,7 +42,7 @@ const FOOTER_HTML = `
 <footer>
   <div class="footer-grid">
     <div>
-      <div class="footer-brand-name">Da Fonseca</div>
+      <div class="footer-brand-name">DA FONSECA</div>
       <div class="footer-brand-tag">Sociedade de Advogados</div>
       <p class="footer-brand-desc">
         Atuação técnica e estratégica no Direito Regulatório Empresarial,
@@ -80,7 +80,7 @@ const FOOTER_HTML = `
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© <span id="year"></span> Da Fonseca Sociedade de Advogados · Todos os direitos reservados.</div>
+    <div class="footer-copy">© <span id="year"></span> DA FONSECA - Sociedade de Advogados · Todos os direitos reservados.</div>
     <div class="footer-oab">OAB/MG · Conselheiro Lafaiete · Minas Gerais · Brasil</div>
   </div>
 </footer>
