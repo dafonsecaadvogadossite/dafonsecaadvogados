@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Direito Médico e da Saúde – Da Fonseca Advogados. CRM, CFM, COFEN, COREN, oncologia, urgências e Hospital Ibiapaba.">
+  <title>Direito Médico e da Saúde · Da Fonseca Advogados</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .conselhos-section { margin-top:4rem; }
+    .conselhos-intro { max-width:620px; margin-bottom:2.5rem; font-size:.9rem; color:var(--gray5); line-height:1.9; }
+    .conselho-cards {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:2px; background:rgba(201,169,110,.06);
+      border:1px solid rgba(201,169,110,.06);
+    }
+    .conselho-card {
+      background:var(--black2); padding:2rem 1.5rem;
+      transition:background .3s;
+    }
+    .conselho-card:hover { background:var(--gray1); }
+    .conselho-siglas {
+      font-family:'Cormorant Garamond',serif; font-size:1.5rem;
+      color:var(--gold3); font-weight:400; margin-bottom:.4rem;
+    }
+    .conselho-nome { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gray5); margin-bottom:1rem; }
+    .conselho-card p { font-size:.8rem; color:var(--gray4); line-height:1.7; }
+
+    .urgencia-hero {
+      background:rgba(201,169,110,.04);
+      border:1px solid rgba(201,169,110,.15);
+      padding:3rem; margin-top:4rem;
+      position:relative; overflow:hidden;
+    }
+    .urgencia-hero::before {
+      content:'URGENTE'; position:absolute; right:2rem; top:50%;
+      transform:translateY(-50%);
+      font-family:'Cormorant Garamond',serif; font-size:5rem;
+      font-weight:300; color:var(--gold); opacity:.04; letter-spacing:.2em;
+      white-space:nowrap;
+    }
+    .urgencia-hero h3 { font-size:1.6rem; color:var(--gold3); margin-bottom:1rem; }
+    .urgencia-hero p  { font-size:.87rem; color:var(--gray5); line-height:1.9; max-width:680px; }
+    .urgencia-tipos {
+      display:grid; grid-template-columns:repeat(4,1fr);
+      gap:1px; background:rgba(201,169,110,.07);
+      margin-top:2rem;
+    }
+    .urgencia-tipo {
+      background:var(--charcoal); padding:1.2rem 1rem; text-align:center;
+    }
+    .urgencia-tipo span { display:block; font-size:1.3rem; margin-bottom:.4rem; }
+    .urgencia-tipo p   { font-size:.7rem; color:var(--gray5); letter-spacing:.1em; }
+
+    .ibiapaba-section {
+      background:var(--gray1); border:1px solid rgba(201,169,110,.1);
+      padding:3.5rem; margin-top:4rem; position:relative;
+    }
+    .ibiapaba-section::before {
+      content:''; position:absolute; top:0; left:0; right:0; height:2px;
+      background:linear-gradient(90deg,transparent,var(--gold),transparent); opacity:.5;
+    }
+    .ibiapaba-section h3 { font-size:1.7rem; color:var(--gold3); margin-bottom:1rem; }
+    .ibiapaba-section p  { font-size:.87rem; color:var(--gray5); line-height:1.9; margin-bottom:1rem; }
+
+    .tipo-atuacao-grid {
+      display:grid; grid-template-columns:repeat(2,1fr); gap:2px;
+      background:rgba(201,169,110,.06); margin-top:4rem;
+      border:1px solid rgba(201,169,110,.06);
+    }
+    .tipo-item {
+      background:var(--black2); padding:2rem;
+      transition:background .3s;
+    }
+    .tipo-item:hover { background:var(--gray1); }
+    .tipo-item h4 { font-size:1.1rem; color:var(--cream); margin-bottom:.6rem; margin-top:.5rem; }
+    .tipo-item p  { font-size:.82rem; color:var(--gray5); line-height:1.75; }
+    .tipo-badge {
+      font-size:.6rem; letter-spacing:.2em; text-transform:uppercase;
+      color:var(--gold); border:1px solid rgba(201,169,110,.25);
+      padding:.18rem .55rem; display:inline-block; margin-bottom:.6rem;
+    }
+
+    @media(max-width:900px) {
+      .conselho-cards   { grid-template-columns:1fr 1fr; }
+      .urgencia-tipos   { grid-template-columns:1fr 1fr; }
+      .tipo-atuacao-grid{ grid-template-columns:1fr; }
+    }
+    @media(max-width:480px) {
+      .conselho-cards { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <div class="page-hero-line"></div>
+  <div class="page-hero-content">
+    <div class="section-label">Área 03</div>
+    <h1>Direito Médico <em>e da Saúde</em></h1>
+    <p>
+      Atuação técnica e estratégica perante todos os principais conselhos
+      profissionais de saúde do Brasil. Sindicâncias, responsabilidades e
+      urgências — inclusive oncologia e risco de vida imediato.
+    </p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CONSELHOS -->
+<section class="section" id="conselhos">
+  <div class="container">
+    <div class="section-label">Conselhos Profissionais</div>
+    <h2 class="section-title">Atuação perante <em>todos os conselhos</em></h2>
+    <p class="conselhos-intro">
+      Representamos médicos, enfermeiros, psicólogos, farmacêuticos e
+      fisioterapeutas em processos perante os conselhos federais e regionais
+      de suas respectivas categorias — em sindicâncias, processos ético-disciplinares
+      e defesas administrativas.
+    </p>
+    <div class="conselho-cards">
+      <div class="conselho-card reveal">
+        <div class="conselho-siglas">CRM · CFM</div>
+        <div class="conselho-nome">Medicina</div>
+        <p>Defesa de médicos em sindicâncias e processos ético-disciplinares no Conselho Regional e Federal de Medicina.</p>
+      </div>
+      <div class="conselho-card reveal">
+        <div class="conselho-siglas">COFEN · COREN</div>
+        <div class="conselho-nome">Enfermagem</div>
+        <p>Representação de enfermeiros, técnicos e auxiliares de enfermagem em processos disciplinares nos conselhos de enfermagem.</p>
+      </div>
+      <div class="conselho-card reveal">
+        <div class="conselho-siglas">CFP · CRP</div>
+        <div class="conselho-nome">Psicologia</div>
+        <p>Atuação em defesas e sindicâncias no Conselho Federal e Regional de Psicologia, incluindo processos ético-disciplinares.</p>
+      </div>
+      <div class="conselho-card reveal">
+        <div class="conselho-siglas">CFF · CRF</div>
+        <div class="conselho-nome">Farmácia</div>
+        <p>Defesa de farmacêuticos e profissionais da área em processos perante o Conselho Federal e Regional de Farmácia.</p>
+      </div>
+      <div class="conselho-card reveal">
+        <div class="conselho-siglas">COFFITO</div>
+        <div class="conselho-nome">Fisioterapia e T.O.</div>
+        <p>Representação de fisioterapeutas e terapeutas ocupacionais no Conselho Federal de Fisioterapia e Terapia Ocupacional.</p>
+      </div>
+      <div class="conselho-card reveal">
+        <div class="conselho-siglas">CREFITO</div>
+        <div class="conselho-nome">Regional Fisioterapia</div>
+        <p>Atuação nos Conselhos Regionais de Fisioterapia e Terapia Ocupacional, em defesas e processos administrativos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPOS DE ATUAÇÃO -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-label">Modalidades</div>
+    <h2 class="section-title">Como <em>atuamos</em></h2>
+    <div class="tipo-atuacao-grid">
+      <div class="tipo-item reveal">
+        <span class="tipo-badge">Administrativo</span>
+        <h4>Sindicâncias e Processos Disciplinares</h4>
+        <p>Defesa técnica e estratégica em sindicâncias e processos ético-disciplinares perante os conselhos profissionais. Acompanhamento integral, da instauração ao julgamento.</p>
+      </div>
+      <div class="tipo-item reveal">
+        <span class="tipo-badge">Extrajudicial</span>
+        <h4>Responsabilidade Extrajudicial</h4>
+        <p>Negociação, mediação e resolução de conflitos fora do âmbito judicial. Acordos e termos de compromisso que preservam a imagem e o exercício profissional.</p>
+      </div>
+      <div class="tipo-item reveal">
+        <span class="tipo-badge">Cível</span>
+        <h4>Responsabilidade Civil</h4>
+        <p>Defesa em ações civis de indenização por suposto erro médico ou negligência profissional. Elaboração de defesas técnicas robustas, com base em perícias e literatura científica.</p>
+      </div>
+      <div class="tipo-item reveal">
+        <span class="tipo-badge">Penal</span>
+        <h4>Responsabilidade Penal</h4>
+        <p>Atuação em inquéritos e ações penais envolvendo profissionais de saúde. Defesa firme com profundo conhecimento da jurisprudência na área médico-penal.</p>
+      </div>
+      <div class="tipo-item reveal">
+        <span class="tipo-badge">Paciente</span>
+        <h4>Direitos do Paciente</h4>
+        <p>Representação de pacientes que tiveram seus direitos violados: negativa de tratamento, erro médico, dano decorrente de má prática. Busca de reparação justa e documentada.</p>
+      </div>
+      <div class="tipo-item reveal">
+        <span class="tipo-badge">Requerimentos</span>
+        <h4>Processos Administrativos de Saúde</h4>
+        <p>Requerimentos e pedidos junto a planos de saúde, hospitais e órgãos públicos para garantir acesso a tratamentos, medicamentos e procedimentos negados indevidamente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGÊNCIAS -->
+<section class="section" id="oncologia">
+  <div class="container">
+    <div class="section-label">Prioridade máxima</div>
+    <h2 class="section-title">Urgências e <em>alta complexidade</em></h2>
+    <div class="urgencia-hero reveal">
+      <h3>⚡ Quando a vida não pode esperar</h3>
+      <p>
+        Atuamos diretamente em requerimentos, pedidos e processos administrativos,
+        extrajudiciais e judiciais em casos que exigem resposta imediata:
+        tratamentos oncológicos, cirurgias de urgência, internações necessárias
+        e qualquer situação que demande a plena garantia da saúde e da vida.
+        Quando o tempo é determinante, agimos com ele — não contra ele.
+      </p>
+      <div class="urgencia-tipos">
+        <div class="urgencia-tipo">
+          <span>🎗</span>
+          <p>Oncologia</p>
+        </div>
+        <div class="urgencia-tipo">
+          <span>🏥</span>
+          <p>Cirurgias Urgentes</p>
+        </div>
+        <div class="urgencia-tipo">
+          <span>💊</span>
+          <p>Medicamentos Negados</p>
+        </div>
+        <div class="urgencia-tipo">
+          <span>❤️</span>
+          <p>Risco de Vida</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IBIAPABA -->
+    <div class="ibiapaba-section reveal">
+      <h3>🏥 Hospital do Câncer Ibiapaba · Barbacena/MG</h3>
+      <p>
+        O Da Fonseca Advogados possui atuação direta, especializada e
+        reconhecida perante médicos e pacientes oncológicos do
+        <strong style="color:var(--cream);">Hospital do Câncer Ibiapaba</strong>,
+        em Barbacena — um dos maiores e mais respeitados centros de oncologia
+        de Minas Gerais, referência estadual no tratamento do câncer, com
+        estrutura primorosa e atendimento de excelência.
+      </p>
+      <p>
+        Nossa atuação abrange desde a defesa de profissionais de saúde
+        em processos disciplinares até a representação de pacientes na
+        garantia de acesso a tratamentos, medicamentos e procedimentos
+        — sempre com a urgência que cada caso exige.
+      </p>
+      <p>
+        Conhecemos profundamente a realidade desse ambiente hospitalar,
+        suas dinâmicas, protocolos e necessidades específicas. Essa
+        proximidade nos permite agir com precisão e agilidade onde
+        cada hora faz diferença.
+      </p>
+      <br>
+      <a href="contato.html" class="btn btn-gold">Falar com Especialista Agora</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--charcoal" style="padding:5rem 0;text-align:center;">
+  <div class="container">
+    <h2 class="section-title reveal">Precisa de <em>orientação imediata?</em></h2>
+    <p class="reveal" style="max-width:500px;margin:0 auto 2.5rem;font-size:.88rem;color:var(--gray5);line-height:1.9;">
+      Casos urgentes de saúde recebem atenção prioritária.
+      Entre em contato agora pelo WhatsApp ou agende uma consulta.
+    </p>
+    <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;" class="reveal">
+      <a href="https://wa.me/5531999999999?text=Olá!%20Tenho%20um%20caso%20urgente%20de%20saúde%20e%20preciso%20de%20orientação%20jurídica." target="_blank" class="btn btn-gold">WhatsApp Urgente</a>
+      <a href="contato.html" class="btn btn-outline">Agendar Consulta</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

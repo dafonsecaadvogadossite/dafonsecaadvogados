@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Da Fonseca – Sociedade de Advogados. Especialistas em Direito Regulatório Empresarial, Fraudes Documentais e Direito Médico. Conselheiro Lafaiete, MG.">
+  <meta property="og:title" content="Da Fonseca – Sociedade de Advogados">
+  <meta property="og:description" content="Direito que protege, análise que decide. Conselheiro Lafaiete, MG.">
+  <meta property="og:type" content="website">
+  <title>Da Fonseca – Sociedade de Advogados</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── HERO ── */
+    .hero {
+      min-height:100vh; display:flex; align-items:center;
+      position:relative; overflow:hidden; background:var(--black);
+    }
+    .hero-bg {
+      position:absolute; inset:0;
+      background:
+        radial-gradient(ellipse 65% 90% at 80% 50%,rgba(201,169,110,.045),transparent 70%),
+        radial-gradient(ellipse 40% 60% at 15% 85%,rgba(30,30,30,.5),transparent 60%);
+    }
+    .hero-line {
+      position:absolute; left:5vw; top:0; bottom:0; width:1px;
+      background:linear-gradient(180deg,transparent,rgba(201,169,110,.22) 25%,rgba(201,169,110,.22) 75%,transparent);
+    }
+    .hero-line-r {
+      position:absolute; right:5vw; top:0; bottom:0; width:1px;
+      background:linear-gradient(180deg,transparent,rgba(60,60,60,.12) 25%,rgba(60,60,60,.12) 75%,transparent);
+    }
+    .hero-content {
+      position:relative; z-index:1;
+      padding:0 5vw; max-width:960px;
+    }
+    .hero-eyebrow {
+      display:flex; align-items:center; gap:1rem;
+      margin-bottom:2.2rem;
+    }
+    .hero-eyebrow::before {
+      content:''; display:block; width:40px; height:1px; background:var(--gold); opacity:.7;
+    }
+    .hero-eyebrow span {
+      font-size:.62rem; letter-spacing:.42em; text-transform:uppercase;
+      color:var(--gold); opacity:.75;
+    }
+    .hero-title {
+      font-family:'Cormorant Garamond',serif; font-weight:300;
+      font-size:clamp(3rem,7.5vw,7rem); line-height:1.02;
+      color:var(--white); margin-bottom:1.2rem;
+    }
+    .hero-subtitle {
+      font-size:.78rem; letter-spacing:.28em; text-transform:uppercase;
+      color:var(--gray4); margin-bottom:2.5rem; font-weight:400;
+    }
+    .hero-desc {
+      max-width:500px; font-size:.9rem; color:var(--gray5); line-height:1.9;
+      margin-bottom:3rem;
+      border-left:1px solid rgba(201,169,110,.22); padding-left:1.5rem;
+    }
+    .hero-actions { display:flex; gap:1.8rem; align-items:center; flex-wrap:wrap; }
+
+    /* ── MICHAEL BAR ── */
+    .michael-bar {
+      background:var(--black2); border-bottom:1px solid rgba(201,169,110,.07);
+      padding:1.1rem 5vw; display:flex; align-items:center; gap:1.4rem;
+    }
+    .michael-icon {
+      width:42px; height:42px; border:1px solid rgba(201,169,110,.22);
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.2rem; color:var(--gold); flex-shrink:0;
+    }
+    .michael-text {
+      font-family:'Cormorant Garamond',serif; font-size:.95rem;
+      color:var(--gray5); font-style:italic; line-height:1.4;
+    }
+    .michael-text strong { color:var(--gold3); font-weight:500; }
+
+    /* ── NUMBERS STRIP ── */
+    .numbers-strip {
+      background:var(--charcoal); border-top:1px solid rgba(201,169,110,.07);
+      border-bottom:1px solid rgba(201,169,110,.07);
+      padding:2.5rem 5vw;
+    }
+    .numbers-grid {
+      max-width:1320px; margin:0 auto;
+      display:grid; grid-template-columns:repeat(4,1fr); gap:2px;
+    }
+    .number-item { padding:1.5rem 2rem; text-align:center; }
+    .number-value {
+      font-family:'Cormorant Garamond',serif; font-size:2.8rem;
+      font-weight:300; color:var(--gold); line-height:1;
+      margin-bottom:.3rem;
+    }
+    .number-label {
+      font-size:.65rem; letter-spacing:.25em; text-transform:uppercase;
+      color:var(--gray5);
+    }
+
+    /* ── AREAS OVERVIEW ── */
+    .areas-grid {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:1px; background:rgba(201,169,110,.07);
+      border:1px solid rgba(201,169,110,.07); margin-top:4rem;
+    }
+
+    /* ── QUOTE ── */
+    .quote-section {
+      background:var(--velvet);
+      border-top:1px solid rgba(201,169,110,.08);
+      border-bottom:1px solid rgba(201,169,110,.08);
+    }
+    .quote-inner { max-width:820px; margin:0 auto; padding:6rem 5vw; text-align:center; }
+    blockquote {
+      font-family:'Cormorant Garamond',serif;
+      font-size:clamp(1.3rem,3vw,2.1rem); font-weight:300;
+      font-style:italic; color:var(--cream); line-height:1.55; position:relative;
+    }
+    blockquote::before {
+      content:'"'; position:absolute; top:-1.5rem; left:-2rem;
+      font-size:6rem; color:var(--gold); opacity:.1;
+      font-family:'Cormorant Garamond',serif; line-height:1;
+    }
+    .quote-author {
+      margin-top:1.5rem; font-size:.62rem;
+      letter-spacing:.35em; text-transform:uppercase;
+      color:var(--gold); opacity:.6;
+    }
+
+    /* ── IBIAPABA HIGHLIGHT ── */
+    .ibiapaba-block {
+      background:rgba(201,169,110,.04);
+      border:1px solid rgba(201,169,110,.12);
+      padding:2.5rem; margin-top:2rem;
+      display:flex; gap:2rem; align-items:flex-start;
+    }
+    .ibiapaba-icon { font-size:2rem; flex-shrink:0; }
+    .ibiapaba-block h4 {
+      font-family:'Cormorant Garamond',serif; font-size:1.3rem;
+      color:var(--gold3); margin-bottom:.5rem; font-weight:400;
+    }
+    .ibiapaba-block p { font-size:.83rem; color:var(--gray5); line-height:1.8; }
+
+    /* ── DIFFERENTIALS ── */
+    .diff-grid {
+      display:grid; grid-template-columns:repeat(4,1fr);
+      gap:2px; background:rgba(201,169,110,.05);
+      margin-top:4rem;
+    }
+    .diff-item { background:var(--black); padding:2.5rem 1.8rem; text-align:center; }
+    .diff-num {
+      font-family:'Cormorant Garamond',serif; font-size:2.5rem;
+      font-weight:300; color:var(--gold); opacity:.3; margin-bottom:.5rem;
+    }
+    .diff-item h4 { font-size:1.05rem; color:var(--cream); margin-bottom:.5rem; }
+    .diff-item p  { font-size:.78rem; color:var(--gray5); line-height:1.65; }
+
+    @media(max-width:900px) {
+      .areas-grid  { grid-template-columns:1fr; }
+      .diff-grid   { grid-template-columns:1fr 1fr; }
+      .numbers-grid{ grid-template-columns:1fr 1fr; }
+      .ibiapaba-block { flex-direction:column; }
+    }
+    @media(max-width:480px) {
+      .diff-grid   { grid-template-columns:1fr; }
+      .numbers-grid{ grid-template-columns:1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<div id="nav-placeholder"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-line"></div>
+  <div class="hero-line-r"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow fade-up">
+      <span>Conselheiro Lafaiete · Minas Gerais</span>
+    </div>
+    <h1 class="hero-title fade-up d1">
+      Direito que <em>protege,</em><br>
+      análise que <em>decide.</em>
+    </h1>
+    <p class="hero-subtitle fade-up d2">Da Fonseca · Sociedade de Advogados</p>
+    <p class="hero-desc fade-up d2">
+      Atuação técnica, estratégica e precisa nas mais complexas demandas
+      do Direito Regulatório Empresarial, Direito Médico e combate a
+      Fraudes Documentais. Dados concretos. Critérios claros. Resultados reais.
+    </p>
+    <div class="hero-actions fade-up d3">
+      <a href="contato.html" class="btn btn-gold">Agendar Consulta</a>
+      <a href="areas.html" class="btn-ghost">Ver Áreas de Atuação</a>
+    </div>
+  </div>
+</section>
+
+<!-- MICHAEL BAR -->
+<div class="michael-bar">
+  <div class="michael-icon">⚔</div>
+  <div class="michael-text">
+    <strong>São Miguel Arcanjo</strong> — guardião da justiça e da verdade —
+    inspira e orienta cada passo deste escritório.
+  </div>
+</div>
+
+<!-- NÚMEROS -->
+<div class="numbers-strip">
+  <div class="numbers-grid">
+    <div class="number-item reveal">
+      <div class="number-value">3</div>
+      <div class="number-label">Áreas de Especialidade</div>
+    </div>
+    <div class="number-item reveal">
+      <div class="number-value">6+</div>
+      <div class="number-label">Conselhos Profissionais</div>
+    </div>
+    <div class="number-item reveal">
+      <div class="number-value">MG</div>
+      <div class="number-label">Atuação em Minas Gerais</div>
+    </div>
+    <div class="number-item reveal">
+      <div class="number-value">24h</div>
+      <div class="number-label">Resposta em Urgências</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ÁREAS OVERVIEW -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-label">Especialidades</div>
+    <h2 class="section-title">Nossas <em>áreas de atuação</em></h2>
+    <p class="section-desc">
+      Três pilares de excelência — cada um com profundidade técnica,
+      análise criteriosa e comprometimento com resultados reais.
+    </p>
+    <div class="areas-grid">
+      <div class="card reveal">
+        <span class="card-icon">⚖</span>
+        <h3>Direito Regulatório Empresarial</h3>
+        <p>
+          Documentações exigidas por órgãos públicos, licenciamentos,
+          conformidade regulatória e segurança jurídica para o funcionamento
+          regular das empresas.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Licenciamento</span>
+          <span class="tag">Compliance</span>
+          <span class="tag">Órgãos Públicos</span>
+        </div>
+        <br>
+        <a href="direito-regulatorio.html" class="btn-ghost">Saiba mais</a>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🔍</span>
+        <h3>Fraudes Documentais e Processuais</h3>
+        <p>
+          Análises estratégicas sobre danos patrimoniais com base em dados
+          verificáveis. Laudos objetivos sobre o que foi apurado, com
+          critérios claros e defensáveis.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Perícia</span>
+          <span class="tag">Dano Patrimonial</span>
+          <span class="tag">Laudo Técnico</span>
+        </div>
+        <br>
+        <a href="areas.html#fraudes" class="btn-ghost">Saiba mais</a>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">⚕</span>
+        <h3>Direito Médico e da Saúde</h3>
+        <p>
+          Atuação perante CRM, CFM, COFEN, COREN, CFP, CRP, CFF, CRF,
+          COFFITO e CREFITO. Sindicâncias, responsabilidades e urgências —
+          inclusive oncologia e risco de vida.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Oncologia</span>
+          <span class="tag">Sindicância</span>
+          <span class="tag">Urgências</span>
+        </div>
+        <br>
+        <a href="direito-medico.html" class="btn-ghost">Saiba mais</a>
+      </div>
+    </div>
+
+    <!-- IBIAPABA -->
+    <div class="ibiapaba-block reveal">
+      <div class="ibiapaba-icon">🏥</div>
+      <div>
+        <h4>Hospital do Câncer Ibiapaba · Barbacena/MG</h4>
+        <p>
+          Atuação direta e especializada perante médicos e pacientes oncológicos
+          de um dos maiores Hospitais do Câncer de Minas Gerais — o Ibiapaba,
+          em Barbacena. Referência estadual em oncologia, com tratamento
+          primoroso e de excelência. Nosso escritório oferece suporte jurídico
+          integral nesse contexto sensível e urgente.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-section">
+  <div class="quote-inner">
+    <blockquote>
+      A justiça não é apenas um destino — é o caminho percorrido
+      com rigor técnico, dados concretos e integridade absoluta
+      em cada análise que realizamos.
+    </blockquote>
+    <div class="quote-author">Da Fonseca · Sociedade de Advogados</div>
+  </div>
+</div>
+
+<!-- DIFERENCIAIS -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Por que nos escolher</div>
+    <h2 class="section-title">Nossos <em>diferenciais</em></h2>
+    <div class="diff-grid">
+      <div class="diff-item reveal">
+        <div class="diff-num">01</div>
+        <h4>Análise com Dados</h4>
+        <p>Toda conclusão é sustentada por evidências concretas, documentadas e apresentadas com critérios claros.</p>
+      </div>
+      <div class="diff-item reveal">
+        <div class="diff-num">02</div>
+        <h4>Atuação Urgente</h4>
+        <p>Casos de oncologia, cirurgias imediatas e risco de vida recebem atenção imediata e prioritária.</p>
+      </div>
+      <div class="diff-item reveal">
+        <div class="diff-num">03</div>
+        <h4>Precisão Técnica</h4>
+        <p>Domínio profundo da legislação regulatória, médica e processual, aplicado com estratégia e responsabilidade.</p>
+      </div>
+      <div class="diff-item reveal">
+        <div class="diff-num">04</div>
+        <h4>Transparência Total</h4>
+        <p>O cliente sabe exatamente o que foi verificado e quais são suas opções reais — sem ambiguidades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section section--charcoal" style="padding:5rem 0;">
+  <div class="container" style="text-align:center;">
+    <div class="section-label" style="justify-content:center;">Pronto para agir</div>
+    <h2 class="section-title reveal" style="margin-bottom:1rem;">
+      Fale com um <em>especialista</em>
+    </h2>
+    <p class="reveal" style="max-width:480px;margin:0 auto 2.5rem;font-size:.88rem;color:var(--gray5);line-height:1.9;">
+      Entre em contato agora. Analisamos sua situação com rigor e
+      retornamos com diagnóstico claro, objetivo e sem rodeios.
+    </p>
+    <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;" class="reveal">
+      <a href="contato.html" class="btn btn-gold">Agendar Consulta</a>
+      <a href="https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20uma%20consulta%20com%20Da%20Fonseca%20Advogados." target="_blank" class="btn btn-outline">WhatsApp Agora</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

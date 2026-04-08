@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Direito Regulatório Empresarial – Da Fonseca Advogados. Análise técnica de documentações, conformidade regulatória e processos administrativos.">
+  <title>Direito Regulatório Empresarial · Da Fonseca Advogados</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .services-grid {
+      display:grid; grid-template-columns:repeat(2,1fr);
+      gap:2px; background:rgba(201,169,110,.06);
+      margin-top:4rem; border:1px solid rgba(201,169,110,.06);
+    }
+    .service-item {
+      background:var(--black2); padding:2.5rem 2rem;
+      transition:background .3s; position:relative; overflow:hidden;
+    }
+    .service-item::before {
+      content:''; position:absolute; top:0; left:0; bottom:0; width:2px;
+      background:var(--gold); opacity:0; transition:opacity .3s;
+    }
+    .service-item:hover { background:var(--gray1); }
+    .service-item:hover::before { opacity:1; }
+    .service-item h3 { font-size:1.2rem; color:var(--cream); margin-bottom:.7rem; margin-top:.5rem; }
+    .service-item p  { font-size:.82rem; color:var(--gray5); line-height:1.75; }
+    .service-num {
+      font-family:'Cormorant Garamond',serif; font-size:2rem;
+      font-weight:300; color:var(--gold); opacity:.25; line-height:1;
+    }
+    .process-steps { margin-top:4rem; }
+    .step {
+      display:grid; grid-template-columns:80px 1fr; gap:2rem;
+      padding:2rem 0; border-bottom:1px solid rgba(201,169,110,.07);
+    }
+    .step:last-child { border-bottom:none; }
+    .step-num {
+      font-family:'Cormorant Garamond',serif; font-size:3rem;
+      font-weight:300; color:var(--gold); opacity:.25; line-height:1;
+      padding-top:.2rem;
+    }
+    .step h4 { font-size:1.1rem; color:var(--cream); margin-bottom:.5rem; }
+    .step p  { font-size:.83rem; color:var(--gray5); line-height:1.8; }
+    @media(max-width:768px) {
+      .services-grid { grid-template-columns:1fr; }
+      .step { grid-template-columns:60px 1fr; gap:1rem; }
+      .step-num { font-size:2.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <div class="page-hero-line"></div>
+  <div class="page-hero-content">
+    <div class="section-label">Área 01</div>
+    <h1>Direito Regulatório <em>Empresarial</em></h1>
+    <p>
+      Análise técnica, precisa e estratégica das documentações exigidas
+      por órgãos públicos para o funcionamento e a atuação regular das
+      empresas em Minas Gerais e em todo o Brasil.
+    </p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:start;">
+      <div>
+        <div class="section-label">O que fazemos</div>
+        <h2 class="section-title">Conformidade <em>regulatória</em> com segurança jurídica</h2>
+        <p style="font-size:.9rem;color:var(--gray5);line-height:1.9;margin-bottom:1.5rem;">
+          Empresas de todos os segmentos precisam de documentação precisa
+          e atualizada para operar dentro da lei. Exigências regulatórias
+          estão em constante evolução — e qualquer irregularidade pode
+          resultar em autuações, embargos, multas e até encerramento das
+          atividades.
+        </p>
+        <p style="font-size:.9rem;color:var(--gray5);line-height:1.9;margin-bottom:1.5rem;">
+          Nosso escritório atua com rigor técnico e profundo conhecimento
+          da legislação regulatória, oferecendo análises precisas e
+          soluções objetivas para garantir que sua empresa funcione com
+          total segurança jurídica.
+        </p>
+        <p style="font-size:.9rem;color:var(--gray5);line-height:1.9;">
+          Atuamos de forma preventiva e também corretiva — identificando
+          riscos antes que se tornem problemas, e resolvendo situações
+          irregulares com eficiência e discrição.
+        </p>
+      </div>
+      <div>
+        <div style="background:var(--gray1);border:1px solid rgba(201,169,110,.08);padding:2.5rem;border-top:2px solid var(--gold);" class="reveal">
+          <h4 style="font-size:1rem;color:var(--gold3);margin-bottom:1.2rem;font-weight:400;">Atuamos em casos como:</h4>
+          <ul style="list-style:none;">
+            <li style="padding:.6rem 0;border-bottom:1px solid rgba(201,169,110,.07);font-size:.82rem;color:var(--gray5);display:flex;gap:.8rem;align-items:flex-start;">
+              <span style="color:var(--gold);opacity:.7;">→</span> Licenciamento ambiental e sanitário
+            </li>
+            <li style="padding:.6rem 0;border-bottom:1px solid rgba(201,169,110,.07);font-size:.82rem;color:var(--gray5);display:flex;gap:.8rem;align-items:flex-start;">
+              <span style="color:var(--gold);opacity:.7;">→</span> Alvarás de funcionamento e localização
+            </li>
+            <li style="padding:.6rem 0;border-bottom:1px solid rgba(201,169,110,.07);font-size:.82rem;color:var(--gray5);display:flex;gap:.8rem;align-items:flex-start;">
+              <span style="color:var(--gold);opacity:.7;">→</span> Registros em agências reguladoras
+            </li>
+            <li style="padding:.6rem 0;border-bottom:1px solid rgba(201,169,110,.07);font-size:.82rem;color:var(--gray5);display:flex;gap:.8rem;align-items:flex-start;">
+              <span style="color:var(--gold);opacity:.7;">→</span> Defesas em processos administrativos
+            </li>
+            <li style="padding:.6rem 0;border-bottom:1px solid rgba(201,169,110,.07);font-size:.82rem;color:var(--gray5);display:flex;gap:.8rem;align-items:flex-start;">
+              <span style="color:var(--gold);opacity:.7;">→</span> Adequação documental preventiva
+            </li>
+            <li style="padding:.6rem 0;font-size:.82rem;color:var(--gray5);display:flex;gap:.8rem;align-items:flex-start;">
+              <span style="color:var(--gold);opacity:.7;">→</span> Recursos administrativos e impugnações
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-label">Serviços</div>
+    <h2 class="section-title">O que <em>oferecemos</em></h2>
+    <div class="services-grid">
+      <div class="service-item reveal">
+        <div class="service-num">01</div>
+        <h3>Análise Documental Técnica</h3>
+        <p>Revisão criteriosa de toda a documentação empresarial exigida por órgãos públicos. Identificamos inconsistências, lacunas e riscos com metodologia rigorosa.</p>
+      </div>
+      <div class="service-item reveal">
+        <div class="service-num">02</div>
+        <h3>Licenciamento Regulatório</h3>
+        <p>Acompanhamento e elaboração de processos de licenciamento junto a órgãos municipais, estaduais e federais. Do requerimento inicial à emissão do documento.</p>
+      </div>
+      <div class="service-item reveal">
+        <div class="service-num">03</div>
+        <h3>Compliance Regulatório</h3>
+        <p>Mapeamento dos riscos regulatórios do seu negócio e estruturação de programas de conformidade contínua, adaptados à realidade e ao setor da empresa.</p>
+      </div>
+      <div class="service-item reveal">
+        <div class="service-num">04</div>
+        <h3>Defesas Administrativas</h3>
+        <p>Elaboração de defesas, recursos e impugnações em processos administrativos perante qualquer órgão público, autarquia ou agência reguladora.</p>
+      </div>
+      <div class="service-item reveal">
+        <div class="service-num">05</div>
+        <h3>Assessoria Preventiva</h3>
+        <p>Atuação proativa para evitar autuações, multas e irregularidades. A melhor defesa é a prevenção — e nós agimos antes que os problemas surjam.</p>
+      </div>
+      <div class="service-item reveal">
+        <div class="service-num">06</div>
+        <h3>Regularização de Empresas</h3>
+        <p>Diagnóstico completo da situação regulatória e plano de regularização eficiente para empresas com pendências junto a órgãos públicos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Nossa metodologia</div>
+    <h2 class="section-title">Como <em>trabalhamos</em></h2>
+    <div class="process-steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <div>
+          <h4>Diagnóstico Inicial</h4>
+          <p>Análise completa da situação regulatória atual da empresa. Mapeamos todas as exigências aplicáveis ao seu setor e verificamos o status de cada uma.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <div>
+          <h4>Plano Estratégico</h4>
+          <p>Com base no diagnóstico, elaboramos um plano de ação claro, com prioridades definidas, prazos e responsabilidades — sem promessas vagas.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <div>
+          <h4>Execução Técnica</h4>
+          <p>Elaboração e acompanhamento de todos os documentos, processos e requerimentos necessários, com interlocução direta junto aos órgãos competentes.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">04</div>
+        <div>
+          <h4>Relatório e Entrega</h4>
+          <p>Ao final, entregamos relatório objetivo com tudo o que foi realizado, o que foi obtido e orientações para manutenção da conformidade regulatória.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--charcoal" style="padding:5rem 0;text-align:center;">
+  <div class="container">
+    <h2 class="section-title reveal">Sua empresa está <em>regularizada?</em></h2>
+    <p class="reveal" style="max-width:480px;margin:0 auto 2.5rem;font-size:.88rem;color:var(--gray5);line-height:1.9;">
+      Não espere uma autuação para agir. Entre em contato e
+      faremos um diagnóstico inicial da situação regulatória da sua empresa.
+    </p>
+    <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;" class="reveal">
+      <a href="contato.html" class="btn btn-gold">Falar com Especialista</a>
+      <a href="areas.html" class="btn btn-outline">Ver Todas as Áreas</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com Da Fonseca Advogados. Agende sua consulta jurídica em Conselheiro Lafaiete/MG.">
+  <title>Contato · Da Fonseca Advogados</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-layout {
+      display:grid; grid-template-columns:1.3fr 1fr;
+      gap:5rem; align-items:start; margin-top:4rem;
+    }
+    .contact-form-block {
+      background:var(--gray1); border:1px solid rgba(201,169,110,.08);
+      padding:3rem;
+    }
+    .contact-form-block::before {
+      content:''; display:block; height:2px; margin:-3rem -3rem 2.5rem;
+      background:linear-gradient(90deg,transparent,var(--gold),transparent); opacity:.45;
+    }
+    .contact-form-block h3 {
+      font-size:1.5rem; color:var(--white); margin-bottom:.5rem;
+    }
+    .contact-form-block > p {
+      font-size:.83rem; color:var(--gray5); line-height:1.8; margin-bottom:2rem;
+    }
+    #form-status {
+      font-size:.82rem; margin-top:1rem; min-height:1.4rem;
+      letter-spacing:.05em; line-height:1.5;
+    }
+    .btn-submit {
+      width:100%; border:none; cursor:pointer;
+      margin-top:.5rem; font-size:.72rem;
+    }
+
+    .contact-info-block {}
+    .contact-info-block h3 { font-size:1.6rem; margin-bottom:1.5rem; }
+    .ci-item {
+      display:flex; gap:1.2rem; align-items:flex-start;
+      padding:1.2rem 0; border-bottom:1px solid rgba(201,169,110,.07);
+    }
+    .ci-item:first-of-type { border-top:1px solid rgba(201,169,110,.07); }
+    .ci-icon { color:var(--gold); opacity:.65; font-size:1rem; margin-top:.15rem; min-width:20px; }
+    .ci-content strong {
+      display:block; font-size:.63rem; letter-spacing:.25em; text-transform:uppercase;
+      color:var(--gray6); margin-bottom:.25rem; font-weight:400;
+    }
+    .ci-content span { font-size:.85rem; color:var(--gray5); line-height:1.55; }
+    .ci-content a { color:var(--gold); }
+    .ci-content a:hover { opacity:.75; }
+
+    .wa-block {
+      margin-top:2rem; background:rgba(37,211,102,.06);
+      border:1px solid rgba(37,211,102,.2); padding:2rem;
+      display:flex; gap:1.2rem; align-items:center;
+    }
+    .wa-block-icon { font-size:2rem; flex-shrink:0; }
+    .wa-block h4 { font-size:1rem; color:#6dcc8a; margin-bottom:.4rem; font-weight:400; }
+    .wa-block p  { font-size:.8rem; color:var(--gray5); line-height:1.7; margin-bottom:.8rem; }
+    .wa-block a  {
+      display:inline-block; background:#25D366; color:#fff;
+      font-size:.68rem; letter-spacing:.2em; text-transform:uppercase;
+      padding:.55rem 1.4rem; font-weight:600; transition:opacity .3s;
+    }
+    .wa-block a:hover { opacity:.85; }
+
+    .urgency-notice {
+      margin-top:2rem; background:rgba(201,169,110,.04);
+      border:1px solid rgba(201,169,110,.15); padding:1.5rem;
+    }
+    .urgency-notice h4 { font-size:.95rem; color:var(--gold3); margin-bottom:.5rem; font-weight:400; }
+    .urgency-notice p  { font-size:.8rem; color:var(--gray5); line-height:1.75; }
+
+    @media(max-width:900px) {
+      .contact-layout { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <div class="page-hero-line"></div>
+  <div class="page-hero-content">
+    <div class="section-label">Fale Conosco</div>
+    <h1>Inicie sua <em>consulta</em></h1>
+    <p>
+      Preencha o formulário ou entre em contato pelo canal de sua preferência.
+      Analisamos sua situação e retornamos com diagnóstico claro e objetivo.
+    </p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<section class="section" id="consulta">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- FORMULÁRIO -->
+      <div class="contact-form-block reveal">
+        <h3>Envie sua <em>mensagem</em></h3>
+        <p>
+          Descreva brevemente sua situação. Quanto mais detalhes você
+          fornecer, mais preciso será o nosso retorno.
+        </p>
+
+        <!--
+          INSTRUÇÃO FORMSPREE:
+          1. Acesse https://formspree.io e crie uma conta gratuita
+          2. Crie um novo formulário e copie seu ID (ex: xyzabcde)
+          3. Substitua "SEU_ID_FORMSPREE" abaixo pelo ID obtido
+          Ex: action="https://formspree.io/f/xyzabcde"
+        -->
+        <form id="contactForm" action="https://formspree.io/f/SEU_ID_FORMSPREE" method="POST">
+
+          <!-- Campo oculto anti-spam -->
+          <input type="text" name="_gotcha" style="display:none">
+          <!-- Redireciona após envio (opcional se usar AJAX) -->
+          <input type="hidden" name="_subject" value="Nova consulta – Da Fonseca Advogados">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome Completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone / WhatsApp *</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="area">Área de Interesse *</label>
+            <select id="area" name="area" required>
+              <option value="">Selecione a área</option>
+              <option value="Direito Regulatório Empresarial">Direito Regulatório Empresarial</option>
+              <option value="Fraudes Documentais e Processuais">Fraudes Documentais e Processuais</option>
+              <option value="Direito Médico e da Saúde">Direito Médico e da Saúde</option>
+              <option value="Urgência – Oncologia">Urgência – Oncologia</option>
+              <option value="Urgência – Cirurgia Imediata">Urgência – Cirurgia Imediata</option>
+              <option value="Urgência – Risco de Vida">Urgência – Risco de Vida</option>
+              <option value="Conselho Profissional (CRM/COFEN/CRP etc.)">Conselho Profissional (CRM/COFEN/CRP etc.)</option>
+              <option value="Outra">Outra</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contexto">Contexto da Situação *</label>
+            <textarea id="contexto" name="contexto" rows="5"
+              placeholder="Descreva brevemente sua situação. Quanto mais contexto você fornecer, mais preciso será nosso retorno."
+              required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="urgencia">Nível de Urgência</label>
+            <select id="urgencia" name="urgencia">
+              <option value="Normal – pode aguardar alguns dias">Normal – pode aguardar alguns dias</option>
+              <option value="Importante – resposta em 24h">Importante – resposta em 24h</option>
+              <option value="Urgente – precisa de atenção imediata">Urgente – precisa de atenção imediata</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-submit">Enviar Mensagem</button>
+          <div id="form-status"></div>
+        </form>
+      </div>
+
+      <!-- INFO LATERAL -->
+      <div class="contact-info-block">
+        <h3>Outras formas de <em>contato</em></h3>
+
+        <div class="ci-item">
+          <span class="ci-icon">📍</span>
+          <div class="ci-content">
+            <strong>Endereço</strong>
+            <span>
+              Rua Afonso Pena, 51 — Loja 2<br>
+              Centro · Conselheiro Lafaiete/MG<br>
+              <a href="https://maps.google.com/?q=Rua+Afonso+Pena+51+Conselheiro+Lafaiete+MG" target="_blank" style="font-size:.75rem;margin-top:.3rem;display:inline-block;">
+                Ver no Google Maps →
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <div class="ci-item">
+          <span class="ci-icon">✉</span>
+          <div class="ci-content">
+            <strong>E-mail</strong>
+            <span>
+              <a href="mailto:dafonsecaadvogados@gmail.com">dafonsecaadvogados@gmail.com</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="ci-item">
+          <span class="ci-icon">🌐</span>
+          <div class="ci-content">
+            <strong>Website</strong>
+            <span>dafonsecaadvogados.com.br</span>
+          </div>
+        </div>
+
+        <div class="ci-item">
+          <span class="ci-icon">⚖</span>
+          <div class="ci-content">
+            <strong>Atuação</strong>
+            <span>Conselheiro Lafaiete · Barbacena · Minas Gerais · Brasil</span>
+          </div>
+        </div>
+
+        <!-- WHATSAPP -->
+        <div class="wa-block reveal">
+          <div class="wa-block-icon">💬</div>
+          <div>
+            <h4>WhatsApp Direto</h4>
+            <p>
+              Para atendimento mais rápido ou casos urgentes,
+              fale diretamente pelo WhatsApp.
+            </p>
+            <a href="https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20uma%20consulta%20com%20Da%20Fonseca%20Advogados." target="_blank" rel="noopener">
+              Iniciar Conversa no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- URGÊNCIA -->
+        <div class="urgency-notice reveal">
+          <h4>⚡ Casos Urgentes de Saúde</h4>
+          <p>
+            Situações de oncologia, cirurgias imediatas e risco de vida
+            recebem atenção prioritária. Entre em contato imediatamente
+            pelo WhatsApp e informe que é um caso urgente de saúde.
+            Agimos com a velocidade que a situação exige.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Áreas de atuação do escritório Da Fonseca Advogados: Direito Regulatório, Fraudes Documentais, Direito Médico e da Saúde.">
+  <title>Áreas de Atuação · Da Fonseca Advogados</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .area-section { padding:6rem 0; border-bottom:1px solid rgba(201,169,110,.07); }
+    .area-layout  { display:grid; grid-template-columns:1fr 1.6fr; gap:5rem; align-items:start; margin-top:3rem; }
+    .area-layout.reverse { direction:rtl; }
+    .area-layout.reverse > * { direction:ltr; }
+    .area-sidebar { position:sticky; top:100px; }
+    .area-icon-big {
+      font-size:3.5rem; margin-bottom:1.5rem; display:block;
+    }
+    .area-sidebar h2 { font-size:clamp(1.8rem,3.5vw,2.8rem); margin-bottom:1rem; }
+    .area-sidebar > p { font-size:.88rem; color:var(--gray5); line-height:1.9; margin-bottom:1.5rem; }
+    .sub-list { list-style:none; }
+    .sub-list li {
+      padding:.7rem 0; border-bottom:1px solid rgba(201,169,110,.07);
+      font-size:.82rem; color:var(--gray5);
+      display:flex; align-items:center; gap:.8rem;
+    }
+    .sub-list li::before { content:'—'; color:var(--gold); opacity:.6; }
+    .detail-cards { display:flex; flex-direction:column; gap:1.5rem; }
+    .detail-card {
+      background:var(--gray1); border:1px solid rgba(201,169,110,.07);
+      padding:2rem 1.8rem;
+      border-left:2px solid rgba(201,169,110,.25);
+      transition:border-color .3s, background .3s;
+    }
+    .detail-card:hover { background:var(--gray2); border-left-color:var(--gold); }
+    .detail-card h4 { font-size:1.1rem; color:var(--cream); margin-bottom:.6rem; }
+    .detail-card p  { font-size:.82rem; color:var(--gray5); line-height:1.75; }
+    .detail-card-tags { margin-top:1rem; display:flex; flex-wrap:wrap; gap:.4rem; }
+    .conselho-grid {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:1px; background:rgba(201,169,110,.06);
+      border:1px solid rgba(201,169,110,.06); margin-top:2rem;
+    }
+    .conselho-item {
+      background:var(--black2); padding:1.5rem 1.2rem; text-align:center;
+    }
+    .conselho-item h5 {
+      font-family:'Cormorant Garamond',serif; font-size:1.3rem;
+      font-weight:400; color:var(--gold3); margin-bottom:.3rem;
+    }
+    .conselho-item p { font-size:.7rem; color:var(--gray5); }
+    .urgency-box {
+      background:rgba(201,169,110,.05); border:1px solid rgba(201,169,110,.18);
+      padding:2rem; margin-top:2rem;
+    }
+    .urgency-box h4 {
+      font-family:'Cormorant Garamond',serif; font-size:1.2rem;
+      color:var(--gold3); margin-bottom:.7rem;
+    }
+    .urgency-box p { font-size:.83rem; color:var(--gray5); line-height:1.8; }
+    @media(max-width:900px) {
+      .area-layout { grid-template-columns:1fr; }
+      .area-layout.reverse { direction:ltr; }
+      .area-sidebar { position:static; }
+      .conselho-grid { grid-template-columns:1fr 1fr; }
+    }
+    @media(max-width:480px) {
+      .conselho-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-line"></div>
+  <div class="page-hero-content">
+    <div class="section-label">Expertise</div>
+    <h1>Áreas de <em>Atuação</em></h1>
+    <p>
+      Três especialidades integradas, aplicadas com rigor técnico
+      e comprometimento real com os resultados dos nossos clientes.
+    </p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ÁREA 1: REGULATÓRIO -->
+<section class="area-section" id="regulatorio">
+  <div class="container">
+    <div class="area-layout">
+      <div class="area-sidebar">
+        <span class="area-icon-big">⚖</span>
+        <div class="section-label">Área 01</div>
+        <h2>Direito Regulatório <em>Empresarial</em></h2>
+        <p>
+          Assessoria técnica e precisa na elaboração, revisão e adequação
+          de documentações exigidas por órgãos públicos para o funcionamento
+          e a atuação regular das empresas. Garantimos conformidade
+          regulatória com segurança jurídica plena.
+        </p>
+        <ul class="sub-list">
+          <li>Licenciamento e alvarás de funcionamento</li>
+          <li>Documentação para órgãos reguladores</li>
+          <li>Compliance regulatório</li>
+          <li>Análise e adequação documental</li>
+          <li>Processos administrativos empresariais</li>
+          <li>Atuação extrajudicial e judicial</li>
+        </ul>
+        <br>
+        <a href="direito-regulatorio.html" class="btn btn-gold" style="display:inline-block;">Página Completa</a>
+      </div>
+      <div class="detail-cards">
+        <div class="detail-card reveal">
+          <h4>Análise Técnica de Documentação</h4>
+          <p>
+            Avaliação minuciosa de todos os documentos exigidos pelos órgãos
+            públicos para o funcionamento regular da empresa. Identificamos
+            inconsistências, riscos e lacunas antes que se tornem problemas.
+          </p>
+          <div class="detail-card-tags">
+            <span class="tag">Órgãos Públicos</span><span class="tag">Documentação</span>
+          </div>
+        </div>
+        <div class="detail-card reveal">
+          <h4>Conformidade Regulatória</h4>
+          <p>
+            Acompanhamento contínuo das exigências legais e regulatórias
+            aplicáveis à sua atividade, garantindo que a empresa opere
+            sempre dentro dos parâmetros legais vigentes.
+          </p>
+          <div class="detail-card-tags">
+            <span class="tag">Compliance</span><span class="tag">Licenciamento</span>
+          </div>
+        </div>
+        <div class="detail-card reveal">
+          <h4>Processos Administrativos</h4>
+          <p>
+            Representação e defesa em processos administrativos perante
+            órgãos públicos, autarquias e agências reguladoras.
+            Elaboração de recursos, defesas e requerimentos.
+          </p>
+          <div class="detail-card-tags">
+            <span class="tag">Defesas</span><span class="tag">Recursos</span><span class="tag">Requerimentos</span>
+          </div>
+        </div>
+        <div class="detail-card reveal">
+          <h4>Assessoria Empresarial Preventiva</h4>
+          <p>
+            A melhor estratégia é a prevenção. Mapeamos os riscos regulatórios
+            do seu negócio e estruturamos soluções antes que irregularidades
+            causem prejuízos operacionais, financeiros ou reputacionais.
+          </p>
+          <div class="detail-card-tags">
+            <span class="tag">Prevenção</span><span class="tag">Risco</span><span class="tag">Estratégia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÁREA 2: FRAUDES -->
+<section class="area-section section--dark" id="fraudes">
+  <div class="container">
+    <div class="area-layout">
+      <div class="area-sidebar">
+        <span class="area-icon-big">🔍</span>
+        <div class="section-label">Área 02</div>
+        <h2>Fraudes Documentais <em>e Processuais</em></h2>
+        <p>
+          Análises estratégicas e criteriosas sobre danos produzidos
+          em qualquer contexto, com especial atenção à dilapidação
+          patrimonial. Trabalhamos com base em dados e informações
+          verificáveis — entregando laudos com critérios claros e
+          objetivos sobre o que foi apurado.
+        </p>
+        <ul class="sub-list">
+          <li>Análise de danos patrimoniais</li>
+          <li>Detecção de fraudes documentais</li>
+          <li>Análise de fraudes processuais</li>
+          <li>Elaboração de laudos técnicos</li>
+          <li>Estratégia de recuperação de ativos</li>
+          <li>Atuação cível e penal</li>
+        </ul>
+      </div>
+      <div class="detail-cards">
+        <div class="detail-card reveal">
+          <h4>Análise de Danos e Dilapidação Patrimonial</h4>
+          <p>
+            Levantamento detalhado dos prejuízos causados por fraudes,
+            desvios ou condutas ilícitas. Quantificamos com precisão o
+            dano sofrido para embasar ações de ressarcimento.
+          </p>
+          <div class="detail-card-tags">
+            <span class="tag">Patrimônio</span><span class="tag">Dano</span><span class="tag">Quantificação</span>
+          </div>
+        </div>
+        <div class="detail-card reveal">
+          <h4>Detecção de Fraudes Documentais</h4>
+          <p>
+            Identificação de irregularidades, falsificações e adulterações
+            em documentos de qualquer natureza. Análise criteriosa com
+            base em dados concretos e métodos verificáveis.
+          </p>
+          <div class="detail-card-tags">
+            <span class="tag">Documentos</span><span class="tag">Irregularidades</span>
+          </div>
+        </div>
+        <div class="detail-card reveal">
+          <h4>Fraudes Processuais</h4>
+          <p>
+            Detecção de manobras processuais fraudulentas, produção
+            de provas ilícitas e condutas que comprometem a integridade
+            do processo. Atuação firme para preservar os direitos do cliente.
+          </p>
+          <div class="detail-card-tags">
+            <span class="tag">Processo</span><span class="tag">Provas</span><span class="tag">Defesa</span>
+          </div>
+        </div>
+        <div class="detail-card reveal">
+          <h4>Laudos Técnicos Objetivos</h4>
+          <p>
+            Toda análise resulta em um laudo claro, objetivo e juridicamente
+            sólido. Tudo verificado é comunicado com critérios transparentes —
+            o cliente sabe exatamente o que foi apurado e o que pode fazer.
+          </p>
+          <div class="detail-card-tags">
+            <span class="tag">Laudo</span><span class="tag">Transparência</span><span class="tag">Dados</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÁREA 3: MÉDICO -->
+<section class="area-section" id="medico">
+  <div class="container">
+    <div class="area-layout">
+      <div class="area-sidebar">
+        <span class="area-icon-big">⚕</span>
+        <div class="section-label">Área 03</div>
+        <h2>Direito Médico <em>e da Saúde</em></h2>
+        <p>
+          Atuação perante todos os principais conselhos profissionais de saúde.
+          Sindicâncias, responsabilidades administrativas, extrajudiciais,
+          cíveis e penais. Requerimentos urgentes em casos de alta complexidade.
+        </p>
+        <ul class="sub-list">
+          <li>Medicina · CRM e CFM</li>
+          <li>Enfermagem · COFEN e COREN</li>
+          <li>Psicologia · CFP e CRP</li>
+          <li>Farmácia · CFF e CRF</li>
+          <li>Fisioterapia e T.O. · COFFITO e CREFITO</li>
+          <li>Oncologia e urgências de saúde</li>
+        </ul>
+        <br>
+        <a href="direito-medico.html" class="btn btn-gold" style="display:inline-block;">Página Completa</a>
+      </div>
+      <div>
+        <div class="conselho-grid">
+          <div class="conselho-item reveal">
+            <h5>CRM · CFM</h5>
+            <p>Medicina</p>
+          </div>
+          <div class="conselho-item reveal">
+            <h5>COFEN · COREN</h5>
+            <p>Enfermagem</p>
+          </div>
+          <div class="conselho-item reveal">
+            <h5>CFP · CRP</h5>
+            <p>Psicologia</p>
+          </div>
+          <div class="conselho-item reveal">
+            <h5>CFF · CRF</h5>
+            <p>Farmácia</p>
+          </div>
+          <div class="conselho-item reveal">
+            <h5>COFFITO</h5>
+            <p>Fisioterapia e T.O.</p>
+          </div>
+          <div class="conselho-item reveal">
+            <h5>CREFITO</h5>
+            <p>Fisioterapia Regional</p>
+          </div>
+        </div>
+
+        <div class="urgency-box reveal">
+          <h4>⚡ Urgências e Casos de Alta Complexidade</h4>
+          <p>
+            Atuamos diretamente em requerimentos, pedidos e processos
+            administrativos, extrajudiciais e judiciais em casos que
+            exigem resposta imediata: oncologia, cirurgias urgentes,
+            risco de vida e qualquer situação que demande a plena
+            garantia da saúde e da vida. O tempo importa — agimos com ele.
+          </p>
+        </div>
+
+        <div class="detail-card reveal" style="margin-top:1.5rem;">
+          <h4>🏥 Hospital Ibiapaba · Barbacena/MG</h4>
+          <p>
+            Atuação direta e especializada perante médicos e pacientes
+            oncológicos do Hospital do Câncer Ibiapaba — um dos maiores
+            e mais reconhecidos centros de oncologia de Minas Gerais,
+            com tratamento primoroso e de excelência. Nosso escritório
+            oferece suporte jurídico integral nesse contexto sensível.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--charcoal" style="padding:5rem 0;text-align:center;">
+  <div class="container">
+    <h2 class="section-title reveal">Precisa de <em>orientação jurídica?</em></h2>
+    <p class="reveal" style="max-width:480px;margin:0 auto 2.5rem;font-size:.88rem;color:var(--gray5);line-height:1.9;">
+      Entre em contato. Analisamos sua situação e retornamos com
+      diagnóstico claro e objetivo sobre as melhores alternativas.
+    </p>
+    <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;" class="reveal">
+      <a href="contato.html" class="btn btn-gold">Agendar Consulta</a>
+      <a href="https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20uma%20consulta%20com%20Da%20Fonseca%20Advogados." target="_blank" class="btn btn-outline">WhatsApp Agora</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
